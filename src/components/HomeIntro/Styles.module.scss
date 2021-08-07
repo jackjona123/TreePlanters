@@ -1,0 +1,119 @@
+@import "../../styles/Variables.module.scss";
+@import "../../styles/Mixins.module.scss";
+@import "../../styles/Typography.module.scss";
+
+.container {
+  background-image: linear-gradient(270deg, #2a4270 21%, #16243e 62%);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  @include mq("tablet") {
+    flex-direction: row;
+  }
+}
+
+.content {
+  @include pad-top-standard;
+  @include pad-bot-standard;
+  @include mar-bot-small;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  @include mq("tablet") {
+    max-width: 650px;
+  }
+}
+
+.title {
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-family: $serif;
+  color: $white;
+  text-align: center;
+  min-height: 175px;
+  @include mq("mobile") {
+    min-height: auto;
+  }
+  @include mq("tablet") {
+    text-align: left;
+    height: 200px;
+  }
+}
+
+.typist {
+  display: inline-block;
+}
+
+.titleEmphasis {
+  font-style: italic;
+  color: $orangeOnDark;
+}
+
+.ctas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  align-content: flex-start;
+  margin-top: 30px;
+  @include mq("tablet") {
+    width: auto;
+    margin-top: 40px;
+    flex-direction: row;
+  }
+}
+
+.ctaSecondary {
+  @include links-on-dark;
+  padding-top: 10px;
+  margin-top: 30px;
+  font-size: 21px;
+  text-align: center;
+  a {
+    font-weight: normal;
+  }
+  @include mq("tablet") {
+    padding-top: 18px;
+    margin-top: 0;
+    margin-left: 40px;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.img {
+  margin-top: 10px;
+  align-self: flex-end;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  @include mq("tablet") {
+    margin-top: 0;
+    max-width: 30%;
+    margin-left: 5%;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+  }
+}
+.bannerImg {
+  // -webkit-filter: drop-shadow(0px 0px 21px rgba($orangeLight, 0.6));
+  // filter: drop-shadow(0px 0px 21px rgba($orangeLight, 0.68));
+  -webkit-filter: drop-shadow(0px 0px 62px rgba($black, 0.8));
+  filter: drop-shadow(0px 0px 62px rgba($black, 0.8));
+  @include mq("tablet") {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

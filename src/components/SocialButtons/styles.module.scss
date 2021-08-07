@@ -1,0 +1,29 @@
+@import "../../styles/Variables.module.scss";
+@import "../../styles/Typography.module.scss";
+@import "../../styles/Mixins.module.scss";
+
+.button {
+  background-color: $white;
+  border: 2px solid $grayBorder;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  border-radius: $borderRadius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $black;
+}
+
+.button:hover {
+  opacity: 1;
+  color: $orange;
+  border: 2px solid $orange;
+}
+
+.logo {
+  margin-right: 0.6em;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}

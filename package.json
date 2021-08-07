@@ -1,0 +1,101 @@
+{
+  "name": "treeplanters",
+  "private": true,
+  "description": "A Gatsby site to help inform and give people a way to help the environment through tree planting.",
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/jackjona123/treeplanters/issues"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "facepaint": "^1.2.1",
+    "gatsby": "^2.3.32",
+    "gatsby-image": "^2.0.29",
+    "gatsby-plugin-advanced-sitemap": "^1.0.3",
+    "gatsby-plugin-emotion": "^4.0.3",
+    "gatsby-plugin-feed": "^2.0.13",
+    "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-mailchimp": "^5.1.0",
+    "gatsby-plugin-manifest": "^2.0.18",
+    "gatsby-plugin-netlify-cms": "^3.0.12",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-scroll-indicator": "^0.1.2",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-plugin-sitemap": "^2.1.0",
+    "gatsby-remark-copy-linked-files": "^2.0.9",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-remark-responsive-iframe": "^2.0.9",
+    "gatsby-remark-smartypants": "^2.0.8",
+    "gatsby-source-filesystem": "^2.0.32",
+    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-sharp": "^2.1.14",
+    "gatsby-transformer-yaml": "^2.1.12",
+    "netlify-cms": "^2.9.1",
+    "node-sass": "^4.12.0",
+    "prismjs": "^1.15.0",
+    "querystringify": "^2.0.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-scroll": "^1.7.12",
+    "react-share": "^2.4.0",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "^0.0.5",
+    "react-typography": "^0.16.18",
+    "typeface-merriweather": "0.0.54",
+    "typeface-montserrat": "0.0.54",
+    "typography": "^0.16.18",
+    "typography-theme-wordpress-2016": "^0.16.18"
+  },
+  "homepage": "https://github.com/jackjona123/treeplanters",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "GPL",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackjona123/treeplanters.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-formatter-pretty": "^2.1.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.3.0",
+    "prettier": "1.17.1",
+    "pretty-quick": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && eslint src"
+    }
+  }
+}

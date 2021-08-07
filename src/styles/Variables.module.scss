@@ -1,0 +1,51 @@
+/* Colors */
+$black: #0d1626;
+$white: #ffffff;
+$orangeOnDark: #dc8c01;
+$orange: #cf8300;
+$orangeLight: #ffb637;
+
+$blue: #396abf;
+$blueSky: #74c9e6;
+$green: #00b364;
+$greenDark: #009454;
+$pink: #f281ac;
+$yellow: #efaf4b;
+$yellowLight: #ffe1b2;
+$cream: #fff4dd;
+$greenLight: #e5fff3;
+$blueLight: #e9effa;
+
+$whiteFaded: rgba($white, 0.7);
+
+$gray: #616771;
+$grayDark: #62646f;
+$grayLight: #e2e6e7;
+$grayLightest: #f2f4f5;
+$grayBorder: #dde0e5;
+
+// Links
+$link: $blue;
+$linkHover: $orange;
+$linkActive: darken($orange, 7.5%);
+
+// Specific Usage
+
+$textBody: $black;
+
+/* Breakpoints */
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1040px;
+$max: 1340px;
+$sub: 760px;
+
+$breakpoints: (
+  "mobile": $mobile,
+  "tablet": $tablet,
+  "desktop": $desktop,
+  "max": $max
+);
+
+$borderRadius: 4px;

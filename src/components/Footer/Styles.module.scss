@@ -1,0 +1,251 @@
+@import "../../styles/Variables.module.scss";
+@import "../../styles/Mixins.module.scss";
+@import "../../styles/Typography.module.scss";
+
+.container {
+  background: $white;
+  background-image: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  color: $black;
+  @include pad-top-standard;
+  @include pad-bot-standard;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @include mq("tablet") {
+  }
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mq("tablet") {
+    flex-direction: row;
+  }
+}
+
+.company {
+  width: 100%;
+  @include mq("tablet") {
+    max-width: 170px;
+  }
+}
+
+.description {
+  margin-top: 12px;
+  @include font-size($text-xsmall);
+  color: $gray;
+}
+
+.social {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 30px 0 35px 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 95px;
+  @include mq("tablet") {
+    margin-bottom: 0;
+  }
+}
+
+.socialLink {
+  padding: 0;
+  margin: 0 15px 0 0;
+  a {
+    fill: $black;
+  }
+  a:hover {
+    fill: $linkHover;
+  }
+  a:active {
+    fill: $linkActive;
+  }
+}
+
+.nav {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mq("tablet") {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.navTitle {
+  color: $black;
+  padding: 0;
+  margin: 0 0 13px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  @include font-size($text-small);
+  a {
+    text-decoration: none;
+  }
+  @include mq("tablet") {
+    margin-bottom: 0;
+  }
+}
+
+.choiceLists {
+  display: flex;
+  flex-direction: column;
+  @include mq("tablet") {
+    flex-direction: row;
+  }
+}
+
+.navCol {
+  @include mq("tablet") {
+    margin-right: 100px;
+  }
+  @include mq("desktop") {
+    margin-right: 160px;
+  }
+}
+
+.choiceList {
+  list-style-type: none;
+  padding-left: 0;
+  @include mq("tablet") {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0 100px;
+  }
+  @include mq("desktop") {
+    grid-gap: 0 150px;
+  }
+}
+
+.navItem {
+  padding: 0;
+  margin: 5px 0 0 0;
+  @include font-size($text-small);
+  @include links-on-light;
+}
+
+.bottom {
+  width: 100%;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid $grayBorder;
+  padding-top: 20px;
+
+  @include mq("tablet") {
+    @include mar-top-standard;
+  }
+}
+
+.disclaimer {
+  @include font-size($text-xsmall);
+  color: $gray;
+  margin: 0;
+}
+
+.impactMakers {
+  @include white-box;
+  width: 85%;
+  @include mar-top-standard;
+  @include pad-bot-standard;
+  @include pad-top-standard;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mq("tablet") {
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+    background-size: contain;
+    background-position: top center;
+  }
+}
+
+.impactMakersTitle {
+  @include font-size($title-small);
+  margin-top: 0;
+  font-weight: bold;
+  font-family: $sans;
+}
+
+.impactMakersCreators {
+  list-style-type: none;
+  padding: 0;
+  margin: 13px auto 30px;
+  display: flex;
+  flex-direction: column;
+  @include mq("tablet") {
+    flex-wrap: wrap;
+  }
+  @include mq("desktop") {
+    margin: 15px auto 30px;
+    flex-direction: row;
+  }
+}
+
+.impactMakersCreator {
+  a {
+    display: flex;
+    align-items: center;
+  }
+  @include links-on-light;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq("desktop") {
+    margin: 0 30px 0 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.impactMakerAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+
+.impactMakersDescription {
+  max-width: 500px;
+  margin: 0 auto;
+  color: $grayDark;
+}
+
+.impactMakersCta {
+  @include no-underline;
+  margin: 30px auto 0;
+  width: 100%;
+  @include mq("tablet") {
+    width: auto;
+  }
+}
