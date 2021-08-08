@@ -4,7 +4,6 @@ import MenuIcon from "../Images/Icons/MenuIcon";
 import GlobalStyles from "../../styles/Global.module.scss";
 import ButtonStyles from "../../styles/Buttons.module.scss";
 import Styles from "./Styles.module.scss";
-import Logo from "./LogoOnDark.svg";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);

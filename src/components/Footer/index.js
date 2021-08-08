@@ -8,7 +8,6 @@ import InstagramIcon from "../Images/Icons/InstagramIcon";
 import GlobalStyles from "../../styles/Global.module.scss";
 import ButtonStyles from "../../styles/Buttons.module.scss";
 import Styles from "./Styles.module.scss";
-import Logo from "./LogoOnLight.svg";
 
 const Footer = () => (
   <footer className={Styles.container}>
@@ -16,7 +15,7 @@ const Footer = () => (
       <div className={Styles.top}>
         <div className={Styles.company}>
           <Link to="/" title="Go back home">
-            <img src={Logo} alt="TreePlanters" />
+            <img src='https://cdn.jsdelivr.net/gh/jackjona123/TreePlanters@assets/logoonlight.svg' alt="TreePlanters" />
           </Link>
           <p className={Styles.description}>
             Learn how you can help prevent earth’s climate breaking down.
